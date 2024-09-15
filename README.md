@@ -38,7 +38,7 @@ Vue project to demonstrate how to create a graph using a canvas
 │   │   ├── Button.vue
 │   │   └── ...
 │   ├── views/
-│   │   ├── HomePage.vue
+│   │   ├── Home.vue
 │   │   └── ...
 │   ├── routes/
 │   │   ├── index.ts

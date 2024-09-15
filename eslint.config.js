@@ -1,8 +1,9 @@
 import eslint from '@eslint/js';
 import pluginVue from 'eslint-plugin-vue';
 import tseslint from 'typescript-eslint';
-import eslintConfigPrettier from "eslint-config-prettier";
-import vueParser from "vue-eslint-parser";
+import eslintConfigPrettier from 'eslint-config-prettier';
+import vueParser from 'vue-eslint-parser';
+import eslintPluginPrettierRecommended from 'eslint-plugin-prettier/recommended';
 
 export default [
   eslint.configs.recommended,
@@ -10,13 +11,13 @@ export default [
   ...tseslint.configs.recommended,
   eslintConfigPrettier,
   {
-    files: ["src/**/*.ts", "src/**/*.vue"],
-    ignores: ["**/*.config.js"],
+    files: ['src/**/*.ts', 'src/**/*.vue'],
+    ignores: ['**/*.config.js'],
     languageOptions: {
       parser: vueParser,
       parserOptions: {
         parser: tseslint.parser,
-        sourceType: "module",
+        sourceType: 'module',
       },
     },
     rules: {
@@ -24,5 +25,6 @@ export default [
       'prefer-arrow-callback': ['error', { allowNamedFunctions: true }],
       'vue/multi-word-component-names': 'off',
     },
-  }
-]
+  },
+  eslintPluginPrettierRecommended,
+];

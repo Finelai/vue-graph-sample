@@ -1,10 +1,10 @@
-import { createWebHistory, createRouter } from "vue-router";
+import { createWebHistory, createRouter } from 'vue-router';
 
-import { PATHS } from "@/routes/paths";
+import { PATHS } from '@/routes/paths';
 
-import HomePage from "@/views/Home.vue";
-import NotFoundPage from "@/views/NotFound.vue";
-import GraphPage from "@/views/Graph.vue";
+import HomePage from '@/views/Home.vue';
+import NotFoundPage from '@/views/NotFound.vue';
+import GraphPage from '@/views/Graph.vue';
 
 export const routes = [
   {
@@ -23,7 +23,7 @@ export const routes = [
     component: NotFoundPage,
   },
   {
-    path: "/:pathMatch(.*)*",
+    path: '/:pathMatch(.*)*',
     component: NotFoundPage,
   },
 ];

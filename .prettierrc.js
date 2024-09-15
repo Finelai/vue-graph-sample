@@ -7,4 +7,4 @@ export default {
   endOfLine: 'lf',
   newlineBetweenTypes: true,
   trailingComma: 'all',
-}
+};

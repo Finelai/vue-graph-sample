@@ -30,19 +30,19 @@ Vue project to demonstrate how to create a graph using a canvas
 ├── src/
 │   ├── assets/
 │   │   ├── images
-│   │   └── styles
+│   │   ├── styles
+│   │   └── locales/
+│   │     ├── en
+│   │     └── ru
 │   ├── components/
-│   │   ├── ui
+│   │   ├── Button.vue
 │   │   └── ...
-│   ├── layouts/
-│   │   ├── MainLayout.ts
+│   ├── views/
+│   │   ├── HomePage.vue
 │   │   └── ...
-│   ├── locales/
-│   │   ├── en
-│   │   └── ru
-│   ├── router/
+│   ├── routes/
 │   │   ├── index.ts
-│   │   ├── routes.ts
+│   │   ├── router.ts
 │   │   └── ...
 │   ├── types/
 │   ├── utils/

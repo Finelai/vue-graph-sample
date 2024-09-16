@@ -11,6 +11,7 @@ Vue project to demonstrate how to create a graph using a canvas
 | Typescript   | A superset of JavaScript that enhances the development experience with static typing.  |
 | Vue Router   | Official router for Vue.js, used for managing application routes.                      |
 | Vue i18n     | Internationalization plugin for Vue.js applications, enabling multi-language support.  |
+| Vue-ChartJs  | Modern & Interactive Open-source library to create Graphs.                             |
 
 ## What's Included?
 

@@ -7,6 +7,10 @@ export const PATHS = {
     path: '/graph',
     name: 'graph',
   },
+  settings: {
+    path: '/settings',
+    name: 'settings',
+  },
   notFound: {
     path: '/404',
     name: 'notFound',

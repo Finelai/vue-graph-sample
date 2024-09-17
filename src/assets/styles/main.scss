@@ -1,5 +1,14 @@
 @import './reset';
 
-nav {
-  background: blue;
+html, body {
+  background: #fff;
+}
+
+.container {
+  padding: 10px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 32px;
 }

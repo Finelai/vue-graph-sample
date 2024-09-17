@@ -1,8 +1,10 @@
 <template>
-  <div>
-    <span>Graph</span>
-  </div>
-  <Bar :data="data" :options="options" />
+  <section class="container">
+    <h1>Graph</h1>
+    <div class="chart-container">
+      <Bar :data="data" :options="options" />
+    </div>
+  </section>
 </template>
 
 <script lang="ts">
@@ -47,3 +49,12 @@ export default {
   },
 };
 </script>
+
+<style lang="scss">
+.chart-container {
+  position: relative;
+  margin: auto;
+  height: 50vh;
+  width: 50vw;
+}
+</style>

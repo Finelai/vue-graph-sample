@@ -5,6 +5,7 @@ import { PATHS } from '@/routes/paths';
 import HomePage from '@/views/Home.vue';
 import NotFoundPage from '@/views/NotFound.vue';
 import GraphPage from '@/views/Graph.vue';
+import Settings from '@/views/Settings.vue';
 
 export const routes = [
   {
@@ -16,6 +17,11 @@ export const routes = [
     path: PATHS.graph.path,
     name: PATHS.graph.name,
     component: GraphPage,
+  },
+  {
+    path: PATHS.settings.path,
+    name: PATHS.settings.name,
+    component: Settings,
   },
   {
     path: PATHS.notFound.path,

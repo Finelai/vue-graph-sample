@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { RouterLink } from 'vue-router';
+import { PATHS } from '@/routes';
 </script>
 
 <template>
@@ -8,9 +9,9 @@ import { RouterLink } from 'vue-router';
       <img src="@/assets/images/logo.svg" alt="Logo" />
     </div>
     <nav class="menu">
-      <RouterLink to="/">Home</RouterLink>
-      <RouterLink to="/graph">Graph</RouterLink>
-      <RouterLink to="/settings">Settings</RouterLink>
+      <router-link :to="PATHS.home.path">Home</router-link>
+      <router-link :to="PATHS.graph.path">Graph</router-link>
+      <router-link :to="PATHS.settings.path">Settings</router-link>
     </nav>
   </header>
 </template>

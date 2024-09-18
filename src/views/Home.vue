@@ -1,13 +1,14 @@
 <script setup lang="ts">
 import { RouterLink } from 'vue-router';
+import { PATHS } from '@/routes';
 </script>
 
 <template>
   <section class="container">
     <h1>Home</h1>
     <div class="home-menu">
-      <RouterLink to="/graph">Graph</RouterLink>
-      <RouterLink to="/settings">Settings</RouterLink>
+      <router-link :to="PATHS.graph.path">Graph</router-link>
+      <router-link :to="PATHS.settings.path">Settings</router-link>
     </div>
   </section>
 </template>

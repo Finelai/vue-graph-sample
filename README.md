@@ -15,10 +15,10 @@ Vue project to demonstrate how to create a graph using a canvas
 
 ## What's Included?
 
-- [ ] **Index Page**: Provides links to another pages.
+- [x] **Index Page**: Provides links to another pages.
 - [ ] **Header Menu**: Provide theme, languages and navigation.
-- [ ] **Graph setup page**: Graph settings.
-- [ ] **Graph view page**: Display graph based on setting from **Graph Setup Page**. Have a default settings.
+- [ ] **Graph view page**: Display graph. Have a default settings in store.
+- [ ] **Graph settings page**: Page with settings to change graph.
 
 ## Project Structure
 

@@ -4,7 +4,7 @@ export const PATHS = {
     name: 'home',
   },
   graph: {
-    path: '/graph',
+    path: '/graph/:bgColor',
     name: 'graph',
   },
   settings: {

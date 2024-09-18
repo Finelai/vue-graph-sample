@@ -17,6 +17,7 @@ export const routes = [
     path: PATHS.graph.path,
     name: PATHS.graph.name,
     component: GraphPage,
+    props: true,
   },
   {
     path: PATHS.settings.path,

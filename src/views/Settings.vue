@@ -11,10 +11,28 @@ const formRef = ref<FormInst | null>(null);
 const formValue = ref({
   color: store.graphData.backgroundColor,
 });
+const newLabels = [
+  'Povar',
+  'February',
+  'March',
+  'April',
+  'May',
+  'Kasha',
+  'Takaya',
+  'August',
+  'Sekaya',
+  'October',
+  'November',
+  'Lubit',
+];
+const newMetrics = [13, 45, 80, 70, 47, 18, 67, 90, 77, 1, 0, 5];
 
 function handlePreviewClick(e: MouseEvent, router: Router) {
   e.preventDefault();
-  router.push({ name: 'graph', params: { bgColor: formValue.value.color } });
+  router.push({
+    name: 'graph',
+    params: { bgColor: formValue.value.color, labels: JSON.stringify(newLabels), metrics: JSON.stringify(newMetrics) },
+  });
 }
 </script>
 

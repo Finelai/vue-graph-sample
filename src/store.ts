@@ -16,7 +16,16 @@ export const store = reactive({
       'November',
       'December',
     ],
-    metrics: [40, 20, 12, 39, 10, 40, 39, 80, 40, 20, 12, 11],
+    metrics: [40, 20, 12, 46, 10, 31, 15, 80, 65, 20, 12, 11],
     backgroundColor: '#ff00ff',
+  },
+  changeGraphBGColor(newColor: string) {
+    this.graphData.backgroundColor = newColor;
+  },
+  changeGraphLabels(newLabels: string[]) {
+    this.graphData.labels = newLabels;
+  },
+  changeGraphMetrics(newMetrics: number[]) {
+    this.graphData.metrics = newMetrics;
   },
 });

@@ -10,8 +10,8 @@ import { PATHS } from '@/routes';
     </div>
     <nav class="menu">
       <router-link :to="PATHS.home.path">Home</router-link>
-      <router-link :to="PATHS.graph.path">Graph</router-link>
-      <router-link :to="PATHS.settings.path">Settings</router-link>
+      <router-link :to="PATHS.graph.name">Graph</router-link>
+      <router-link :to="PATHS.settings.name">Settings</router-link>
     </nav>
   </header>
 </template>

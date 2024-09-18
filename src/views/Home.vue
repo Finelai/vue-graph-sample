@@ -7,8 +7,8 @@ import { PATHS } from '@/routes';
   <section class="container">
     <h1>Home</h1>
     <div class="home-menu">
-      <router-link :to="PATHS.graph.path">Graph</router-link>
-      <router-link :to="PATHS.settings.path">Settings</router-link>
+      <router-link :to="PATHS.graph.name">Graph</router-link>
+      <router-link :to="PATHS.settings.name">Settings</router-link>
     </div>
   </section>
 </template>

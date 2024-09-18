@@ -12,12 +12,13 @@ Vue project to demonstrate how to create a graph using a canvas
 | Vue Router   | Official router for Vue.js, used for managing application routes.                      |
 | Vue i18n     | Internationalization plugin for Vue.js applications, enabling multi-language support.  |
 | Vue-ChartJs  | Modern & Interactive Open-source library to create Graphs.                             |
+| Naive UI     | TypeScript-based UI component library.                                                 |
 
 ## What's Included?
 
 - [x] **Index Page**: Provides links to another pages.
 - [ ] **Header Menu**: Provide theme, languages and navigation.
-- [ ] **Graph view page**: Display graph. Have a default settings in store.
+- [x] **Graph view page**: Display graph. Have a default settings in store.
 - [ ] **Graph settings page**: Page with settings to change graph.
 
 ## Project Structure

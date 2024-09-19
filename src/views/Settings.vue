@@ -2,7 +2,7 @@
 import { ref } from 'vue';
 import type { Router } from 'vue-router';
 
-import { NButton, NForm, NFormItem, NColorPicker } from 'naive-ui';
+import { NButton, NForm, NFormItem, NColorPicker, NDynamicTags } from 'naive-ui';
 import type { FormInst } from 'naive-ui';
 
 import { store } from '@/store.ts';
@@ -10,28 +10,19 @@ import { store } from '@/store.ts';
 const formRef = ref<FormInst | null>(null);
 const formValue = ref({
   color: store.graphData.backgroundColor,
+  labels: store.graphData.labels,
+  metrics: store.graphData.metrics.map(String),
 });
-const newLabels = [
-  'Povar',
-  'February',
-  'March',
-  'April',
-  'May',
-  'Kasha',
-  'Takaya',
-  'August',
-  'Sekaya',
-  'October',
-  'November',
-  'Lubit',
-];
-const newMetrics = [13, 45, 80, 70, 47, 18, 67, 90, 77, 1, 0, 5];
 
 function handlePreviewClick(e: MouseEvent, router: Router) {
   e.preventDefault();
   router.push({
     name: 'graph',
-    params: { bgColor: formValue.value.color, labels: JSON.stringify(newLabels), metrics: JSON.stringify(newMetrics) },
+    params: {
+      bgColor: formValue.value.color,
+      labels: JSON.stringify(formValue.value.labels),
+      metrics: JSON.stringify(formValue.value.metrics),
+    },
   });
 }
 </script>
@@ -43,7 +34,13 @@ function handlePreviewClick(e: MouseEvent, router: Router) {
       <n-form-item label="Background Color" path="color">
         <n-color-picker v-model:value="formValue.color" :show-alpha="false" />
       </n-form-item>
-      <n-button @click="handlePreviewClick($event, $router)">Preview</n-button>
+      <n-form-item label="Labels" path="labels">
+        <n-dynamic-tags v-model:value="formValue.labels" max="12" type="primary" />
+      </n-form-item>
+      <n-form-item label="Metrics" path="metrics">
+        <n-dynamic-tags v-model:value="formValue.metrics" max="12" type="info" />
+      </n-form-item>
+      <n-button strong secondary type="success" @click="handlePreviewClick($event, $router)">Preview</n-button>
     </n-form>
   </section>
 </template>

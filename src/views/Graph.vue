@@ -31,7 +31,7 @@ const graphOptions = {
 function handlePreviewBtn() {
   if (props.bgColor !== '') store.changeGraphBGColor(props.bgColor);
   if (props.labels !== '') store.changeGraphLabels(JSON.parse(props.labels));
-  if (props.metrics !== '') store.changeGraphLabels(JSON.parse(props.metrics));
+  if (props.metrics !== '') store.changeGraphMetrics(JSON.parse(props.metrics));
 }
 </script>
 

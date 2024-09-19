@@ -19,7 +19,7 @@ Vue project to demonstrate how to create a graph using a canvas
 - [x] **Index Page**: Provides links to another pages.
 - [ ] **Header Menu**: Provide theme, languages and navigation.
 - [x] **Graph view page**: Display graph. Have a default settings in store.
-- [ ] **Graph settings page**: Page with settings to change graph.
+- [x] **Graph settings page**: Page with settings to change graph.
 
 ## Project Structure
 
@@ -37,7 +37,7 @@ Vue project to demonstrate how to create a graph using a canvas
 │   │     ├── en
 │   │     └── ru
 │   ├── components/
-│   │   ├── Button.vue
+│   │   ├── Header.vue
 │   │   └── ...
 │   ├── views/
 │   │   ├── Home.vue
@@ -46,8 +46,8 @@ Vue project to demonstrate how to create a graph using a canvas
 │   │   ├── index.ts
 │   │   ├── router.ts
 │   │   └── ...
-│   ├── types/
 │   ├── utils/
+│   ├── store.ts
 │   ├── App.vue
 │   └── main.ts
 ├── package.json

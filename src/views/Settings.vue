@@ -35,10 +35,10 @@ function handlePreviewClick(e: MouseEvent, router: Router) {
         <n-color-picker v-model:value="formValue.color" :show-alpha="false" />
       </n-form-item>
       <n-form-item label="Labels" path="labels">
-        <n-dynamic-tags v-model:value="formValue.labels" max="12" type="primary" />
+        <n-dynamic-tags v-model:value="formValue.labels" :max="12" type="primary" />
       </n-form-item>
       <n-form-item label="Metrics" path="metrics">
-        <n-dynamic-tags v-model:value="formValue.metrics" max="12" type="info" />
+        <n-dynamic-tags v-model:value="formValue.metrics" :max="12" type="info" />
       </n-form-item>
       <n-button strong secondary type="success" @click="handlePreviewClick($event, $router)">Preview</n-button>
     </n-form>

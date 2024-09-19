@@ -8,10 +8,11 @@
     "dev": "vite --mode dev",
     "build": "conc \"vue-tsc --noEmit && vite build\"",
     "preview": "vite preview",
+    "lint:ts": "vue-tsc --noEmit",
     "lint:prettier": "prettier ./src --log-level warn",
     "lint:eslint": "eslint --ignore-pattern \"/node_modules/\" --ignore-pattern \"/dist/\" --stats",
     "lint:stylelint": "stylelint \"./src/**/*.{vue,scss,css}\"",
-    "lint": "conc \"lint:prettier && lint:eslint && lint:stylelint\""
+    "lint": "conc \"lint:prettier && lint:eslint && lint:stylelint && lint:ts\""
   },
   "dependencies": {
     "chart.js": "^4.4.4",

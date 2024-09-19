@@ -9,9 +9,9 @@ import { Chart as ChartJS, Title, Tooltip, BarElement, CategoryScale, LinearScal
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip);
 
 const props = defineProps<{
-  bgColor?: string;
-  labels?: string;
-  metrics?: string;
+  bgColor: string;
+  labels: string;
+  metrics: string;
 }>();
 
 const graphData = {
